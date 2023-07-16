@@ -29,9 +29,7 @@ After you're finished please remove all the comments and instructions!
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -66,19 +64,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[]**
+- **[Add bookstore components]**
 
-- **[]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link][NOT AVALIABLE NOW]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **[Add bookstore inital design]**
 
 <!-- GETTING STARTED -->
 
@@ -173,7 +161,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/PedroH-Neves/magic-calc/issues).
+Feel free to check the [issues page](https://github.com/PedroH-Neves/book-store-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
