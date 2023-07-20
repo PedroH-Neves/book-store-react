@@ -14,7 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Book />} />
-        <Route path="/Categories" element={<Categories />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </Router>
   );

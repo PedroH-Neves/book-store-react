@@ -5,7 +5,7 @@ const NavBar = () => (
     <nav className="navbar">
       <div>
         <div>
-          <h1>Bookstore CMS</h1>
+          <h1>Bookstore</h1>
           <span className="nav-link"><NavLink to="/">Books</NavLink></span>
           <span className="nav-link"><NavLink to="/categories">Categories</NavLink></span>
         </div>
