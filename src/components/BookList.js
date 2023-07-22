@@ -20,7 +20,7 @@ const BookList = () => {
 
   if (booksStatus === 'loading') {
     content = <h2>Loading Books...</h2>;
-  } else if (booksStatus === 'succeeded') {
+  } else if (booksStatus === 'succeeded' || 'fullfilled') {
     content = books.map((book) => (
       <Book
         key={book.itemId}
