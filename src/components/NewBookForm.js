@@ -1,52 +1,42 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { addNewBook } from '../redux/books/booksSlice';
 
 const NewBookForm = () => {
-  const [form, setForm] = useState({
-    title: '',
-    author: '',
-    category: '',
-    itemId: '',
-  });
   const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
-  const onFormUpdate = ({ target }) => {
-    setForm({
-      ...form,
-      [target.name]: target.value,
-    });
-  };
-
-  const onSubmit = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
-    dispatch(addBook({
-      ...form,
-      itemId: uuidv4(),
-    }));
+    const newBook = {
+      item_id: uuidv4(),
+      title,
+      author,
+      category,
+    };
 
-    setForm({
-      title: '',
-      author: '',
-      category: '',
-      itemId: '',
-    });
+    dispatch(addNewBook(newBook));
+    setTitle('');
+    setAuthor('');
+    setCategory('');
   };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div>
-        <input name="title" id="title" type="text" placeholder="Book title" onChange={onFormUpdate} />
+        <input id="title" type="text" value={title} placeholder="Book title" onChange={(e) => setTitle(e.target.value)} required />
       </div>
       <div>
-        <input name="author" id="author" type="text" placeholder="Book author" onChange={onFormUpdate} />
+        <input id="author" type="text" value={author} placeholder="Book author" onChange={(e) => setAuthor(e.target.value)} required />
       </div>
       <div>
-        <input name="category" id="category" type="text" placeholder="Book category" onChange={onFormUpdate} />
+        <input id="category" type="text" value={category} placeholder="Book category" onChange={(e) => setCategory(e.target.value)} required />
       </div>
-      <button type="button" onClick={onSubmit}>Add new book</button>
+      <button type="submit">Add new book</button>
     </form>
   );
 };
