@@ -1,0 +1,18 @@
+.navlist {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  margin: 2%;
+}
+
+.nav-title {
+  color: #0290ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #121212;
+}

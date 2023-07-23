@@ -5,6 +5,7 @@ import Book from './Book';
 import {
   getBooksErrors, getBooksStatus, selectAllBooks, fetchBooks,
 } from '../redux/books/booksSlice';
+import './BookList.css';
 
 const BookList = () => {
   const dispatch = useDispatch();
@@ -36,10 +37,11 @@ const BookList = () => {
 
   return (
     <div>
-      <h2>Book List</h2>
       {content}
-      <h2>Add a Book</h2>
-      <NewBookForm />
+      <div>
+        <h2 className="book-form-title">ADD NEW BOOK</h2>
+        <NewBookForm />
+      </div>
     </div>
   );
 };

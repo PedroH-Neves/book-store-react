@@ -1,0 +1,17 @@
+.add-book-form {
+  display: flex;
+  gap: 10px;
+  margin-left: 3%;
+}
+
+.form-btn {
+  color: #fff;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.form-input {
+  border: none;
+}
