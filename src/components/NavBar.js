@@ -1,13 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import './NavBar.css';
 
 const NavBar = () => (
   <header className="nav-header">
     <nav className="navbar">
       <div>
-        <div>
-          <h1>Bookstore</h1>
-          <span className="nav-link"><NavLink to="/">Books</NavLink></span>
-          <span className="nav-link"><NavLink to="/categories">Categories</NavLink></span>
+        <div className="navlist">
+          <h1 className="nav-title">Bookstore CMS</h1>
+          <p className="nav-link"><NavLink to="/">BOOKS</NavLink></p>
+          <p className="nav-link"><NavLink to="/categories">CATEGORIES</NavLink></p>
         </div>
       </div>
     </nav>
