@@ -6,6 +6,7 @@
 
 .all-books {
   display: flex;
+  gap: 8%;
 }
 
 .book-div {
